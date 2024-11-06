@@ -6,14 +6,17 @@ module strut_test() {
 
   difference() {
     union() {
-      cylinder(d = bearing_od - bearing_d_gap, h = test_height);
+      cylinder(d = strut_d, h = test_height);
 
       zmove(test_height)
-        cylinder(d = strut_bearing_insert_d, h = strut_bearing_insert_h);
+        #cylinder(d = bearing_id, h = strut_bearing_insert_h);
     }
 
     xmove(-bearing_od / 2)
-      ymove(strut_bearing_insert_d / 2 - strut_flatness)
+      ymove(bearing_id / 2 - strut_flatness)
         cube([bearing_od, bearing_od, test_height + strut_bearing_insert_h]);
   }
 }
+
+xrot(-90)
+  strut_test();

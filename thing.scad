@@ -1,4 +1,5 @@
 include <BOSL2/std.scad>
+include <variables.scad>
 
 use <strut.scad>
 
@@ -11,7 +12,6 @@ module __Customizer_Limit__() {
 }
 
 // set quality, 64 for testing, 128 for rendering
-$fn = $preview ? 64 : 128;
 
 module round(roundness = 1) {
   offset(roundness)
@@ -19,6 +19,3 @@ module round(roundness = 1) {
       offset(roundness)
         children();
 }
-
-xrot(-90)
-  strut_test();
