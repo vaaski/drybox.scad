@@ -8,6 +8,9 @@ bearing_od = 22;
 bearing_w = 7;
 bearing_d_gap = 1;
 
+bearing_spacer_d = 10;
+bearing_spacer_h = 0.5;
+
 strut_flatness = 1.5;
 strut_bearing_insert_h = bearing_w / 2;
 strut_d = bearing_od - bearing_d_gap;
