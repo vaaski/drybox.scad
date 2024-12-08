@@ -1,11 +1,12 @@
 include <BOSL2/std.scad>
 include <variables.scad>
 
+
 module strut_test() {
   test_height = 13;
 
   back_half()
-    ymove(bearing_id / 4)
+    ymove(strut_center_offset)
       union() {
         cylinder(d = strut_d, h = test_height);
 
