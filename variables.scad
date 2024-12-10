@@ -7,7 +7,7 @@ OVERLAP = 0.001;
 bearing_id = 8;
 bearing_od = 22;
 bearing_w = 7;
-bearing_d_gap = 2;
+bearing_d_gap = 2.5;
 
 bearing_spacer_d = 10;
 bearing_spacer_h = 0.5;

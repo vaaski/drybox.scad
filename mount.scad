@@ -53,4 +53,5 @@ mount();
 %zmove(mount_plate_thickness)
   ymove(-strut_d / 4)
     ymove(-strut_center_offset / 2)
-      strut_test();
+      xrot(-90)
+        strut_end();
