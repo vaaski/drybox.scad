@@ -29,6 +29,9 @@ module bearing_tightener() {
 xrot(90) {
   strut_test(12);
 
-  zmove(12 + bearing_spacer_h)
-    bearing_tightener();
+  ymove(-tolerance_tight)
+    zmove(12 + bearing_spacer_h)
+      // zmove(bearing_id / 2)
+      // zrot(180)
+      bearing_tightener();
 }
