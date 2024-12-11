@@ -5,13 +5,13 @@ use <strut.scad>
 use <mount.scad>
 use <roll.scad>
 
-force_preview = false;
+force_view = "no";// [no, assembled, print]
 render_tube_insert = false;
 
 strut_total_width = box_width - 2 * mount_plate_thickness - 2 * bearing_w;
 strut_third_width = strut_total_width / 3;
 
-if ($preview || force_preview) {
+if ((force_view == "no" && $preview) || force_view == "assembled") {
   strut(strut_third_width);
 
   mirror_copy([0, 1, 0])
