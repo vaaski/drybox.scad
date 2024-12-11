@@ -3,8 +3,10 @@ include <variables.scad>
 
 use <strut.scad>
 use <mount.scad>
+use <roll.scad>
 
 force_preview = false;
+render_tube_insert = false;
 
 strut_total_width = box_width - 2 * mount_plate_thickness - 2 * bearing_w;
 strut_third_width = strut_total_width / 3;
@@ -27,6 +29,12 @@ if ($preview || force_preview) {
     ymove(strut_third_width / 2 + bearing_w * 1.5)
       xrot(90)
         bearing_shim();
+
+  if (render_tube_insert) {
+    xrot(90)
+      zmove(-roll_insert_h / 2)
+        roll_tube();
+  }
 } else {
   strut(strut_third_width);
 
@@ -45,4 +53,10 @@ if ($preview || force_preview) {
         ymove(1)
           xrot(-90)
             bearing_shim();
+
+  if (render_tube_insert) {
+    xmove(roll_insert_d / 2)
+      xmove(bearing_od * 2)
+        roll_tube();
+  }
 }

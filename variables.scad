@@ -28,3 +28,7 @@ mount_plate_thickness = mount_plate_nut_height + 1.8;
 
 box_width = 84;
 box_wall_thickness = 2.2;
+
+roll_insert_d = 53;
+roll_insert_h = 65;
+roll_insert_wall_thickness = 2;
