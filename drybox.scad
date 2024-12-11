@@ -33,7 +33,7 @@ if ((force_view == "no" && $preview) || force_view == "assembled") {
   if (render_tube_insert) {
     xrot(90)
       zmove(-roll_insert_h / 2)
-        roll_tube();
+        #roll_tube();
   }
 } else {
   strut(strut_third_width);
