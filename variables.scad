@@ -26,5 +26,5 @@ mount_plate_nut_height = 3.3;
 mount_plate_screw_diameter = 4;
 mount_plate_thickness = mount_plate_nut_height + 1.8;
 
-box_width = 80;
+box_width = 84;
 box_wall_thickness = 2.2;
