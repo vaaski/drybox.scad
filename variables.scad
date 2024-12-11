@@ -23,7 +23,7 @@ mount_plate_width = strut_d + 2 * mount_wall_thickness + tolerance_normal;
 mount_plate_height = strut_d / 2 + strut_center_offset + 2 * mount_wall_thickness + tolerance_normal;
 mount_plate_nut_id = 6.85;
 mount_plate_nut_height = 3.3;
-mount_plate_screw_diameter = 4;
+mount_plate_screw_diameter = 4 + tolerance_tight;
 mount_plate_thickness = mount_plate_nut_height + 1.8;
 
 box_width = 84;
